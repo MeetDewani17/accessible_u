@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 	<title>Before - Accessible University Demo Site - Inaccessible Version</title>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -18,6 +18,13 @@
 	<script src="scripts/before-form.js"></script>
 	<script src="scripts/before-modal.js"></script>
 	<script src="scripts/before-hero.js"></script>
+  <style>
+    a {
+  color: #0074D9; 
+  text-decoration: underline; 
+  }
+  </style>
+  
 </head>
 <body>
   <div id="content">
@@ -30,7 +37,7 @@
         </ul>
       </nav>
       <a href="/">
-        <img id="logo" src="images/8675309-l-o-g-o-before.png" class="d-block"/>
+        <img id="logo" src="images/8675309-l-o-g-o-before.png" class="d-block" alt="Accessible University Logo"/>
       </a>
     </div>
 
@@ -46,8 +53,7 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"
-                  data-toggle="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                   About
               </a>
               <ul class="dropdown-menu">
@@ -59,7 +65,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#"
-                  data-toggle="dropdown">
+                  data-toggle="dropdown" aria-labelledby="Academics dropdown">
                   Academics
               </a>
               <ul class="dropdown-menu">
@@ -105,17 +111,17 @@
                 <div>
                   <div class="slide">
                     <a href="somepage.html?ref=Slide%201">
-                      <img src="images/8675309-before_brass_band.jpg" />
+                      <img src="images/8675309-before_brass_band.jpg" alt="Brass band"/>
                     </a>
                   </div>
                   <div class="slide">
                     <a href="somepage.html?ref=Slide%202">
-                      <img src="images/8675309-before_articulated_bus.jpg" />
+                      <img src="images/8675309-before_articulated_bus.jpg" alt="Articulated Bus"/>
                     </a>
                   </div>
                   <div class="slide">
                     <a href="somepage.html?ref=Slide%203">
-                      <img src="images/8675309-before_construction.jpg" />
+                      <img src="images/8675309-before_construction.jpg" alt="Construction"/>
                     </a>
                   </div>
                 </div>
@@ -227,8 +233,7 @@
                 <div class="heading">Events</div>
 
                 <h6>December 1</h6>
-                <h5><a href="#">A great holiday event</a></h4>
-
+                <p><a href="#">A great holiday event</a></p>
                 <p>Don't miss this event.</p>
                 <img class="hr" src="images/hr.png" alt="horizontal line graphic">
                 <h6>December 31</h6>
@@ -295,7 +300,7 @@
         <div class="container">
           <ul class="social float-right list-unstyled">
             <li><a href="https://facebook.com"><img src="images/8675309-social-facebook.png" alt="FB"></a></li>
-            <li><a href="https://twitter.com"><img src="images/8675309-social-twitter.png" alt="TW"></a</li>
+            <li><a href="https://twitter.com"><img src="images/8675309-social-twitter.png" alt="twitter"></a</li>
           </ul>
           <ul class="list-unstyled">
             <li><a href="#">Contact Us</a></li>
@@ -348,7 +353,8 @@
     <button class="btn btn-primary" type="button" id="modalOkButton">OK</button>
   </div>
 
-  <div id="footer" role="bottom" aria-foo="yes"><span>.</div>
+  <div id="footer" role="bottom" aria-label="This is the footer section"><span>.</span></div>
+
 
 </body>
 </html>
